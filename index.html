@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: create account</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+</head>
+<body>
+    <div class="contenedor">
+
+        <!--Título-->
+        <div class="titulo">
+            <h2>Create Account</h2>
+        </div>
+
+        <!--Formulario-->
+        <form class="form" id="form" name="form" action="#" method="post">
+
+            <!--Campo del Nombre de usuario-->
+            <div class="form-control">
+                <label for="nombreUsuario">Nombre</label>
+                <input type="text" id="nombreUsuario" onkeyup="validarNombreUsuario()">
+                <img class="success-icon" src="images/success-icon.svg" alt="correcto">
+                <img class="error-icon" src="images/error-icon.svg" alt="error">
+                <small>Mensaje error</small>
+            </div>
+
+            <!--Campo del Email-->
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" onkeyup="validarEmail()">
+                <img class="success-icon" src="images/success-icon.svg" alt="correcto">
+                <img class="error-icon" src="images/error-icon.svg" alt="error">
+                <small>Mensaje error</small>
+            </div>
+
+            <!--Campo de la Clave-->
+            <div class="form-control">
+                <label for="password">Clave</label>
+                <input type="password" id="password" onkeyup="validarPassword()">
+                <img class="success-icon" src="images/success-icon.svg" alt="correcto">
+                <img class="error-icon" src="images/error-icon.svg" alt="error">
+                <small>Mensaje error</small>
+            </div>
+
+            <!--Campo de la Confirmación de la clave-->
+            <div class="form-control">
+                <label for="password2">Confirme su clave</label>
+                <input type="password" id="password2" onkeyup="validarPassword()">
+                <img class="success-icon" src="images/success-icon.svg" alt="correcto">
+                <img class="error-icon" src="images/error-icon.svg" alt="error">
+                <small>Mensaje error</small>
+            </div>
+
+            <!--Botón para enviar el formulario-->
+            <button type="submit" class="btn">ENVIAR</button>
+        </form>
+
+    </div>
+    
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>

@@ -1,0 +1,128 @@
+/*Importación de fuente desde Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #242933;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100hv;
+    margin: 0;
+    color: #acbae1;
+}
+
+.contenedor {
+    margin-top: 20px;
+    background-color: #2f3644;
+    border: 1px solid #acbae1;
+    border-radius: 5px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.titulo {
+    padding: 40px 40px 0px 40px;
+    font-size: 18px;
+}
+
+.titulo h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+    font-size: 14px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/*Estilo de los campos del formulario*/
+.form-control input {
+    border: 3px solid white;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+
+.form-control input:focus {
+    border: 3px solid #acbae1;
+}
+
+.form-control.success input {
+    border-color: #4eca64;
+}
+
+.form-control.error input {
+    border-color: #da5757;
+}
+
+
+/*Estilo de los iconos correcto y error del formulario*/
+.form-control img {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.form-control.success img.success-icon {
+    visibility: visible;
+}
+
+.form-control.error img.error-icon {
+    visibility: visible;
+}
+
+
+/*Estilo del mensaje de error del formulario*/
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #da5757;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+
+/*Estilo del botón ENVIAR del formulario*/
+.btn {
+    background-color: #6c63ff;
+    border: 2px solid black;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
